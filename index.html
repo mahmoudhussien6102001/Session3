@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="my-table">
+    <meta name="description" content="my-table">
+    <title>Task Table</title>
+    <style>
+        .table-container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            text-align: center;
+            border: 3px solid purple;
+        }
+        .nested-table {
+            width: 80%;
+            border-collapse: collapse;
+        }
+        .nested-table th, .nested-table td {
+            text-align: center;
+        }
+        .table-wrapper {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .table-wrapper table {
+            width: 45%; 
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="rows">
+            <div class="cols-1">
+                <h1 style="text-align:center">1<sup>st</sup> session<sub>&copy;</sub> </h1>
+                <h4 style="text-align:center">Table(1)</h4>
+                <div class="table-container">
+                    <table style="border: 4px solid purple;">
+                        <thead>
+                            <tr style="background-color:#42ba42;">
+                                <th colspan="2">Links</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Stack Overflow</td>
+                                <td><a href="https://stackoverflow.com/">https://stackoverflow.com/</a></td>
+                                <td>....</td>
+                            </tr>
+                            <tr>
+                                <td>w3school</td>
+                                <td><a href="https://www.w3schools.com/">https://www.w3schools.com/</a></td>
+                                <td rowspan="2">......</td>
+                            </tr>
+                            <tr>
+                                <td>Laracasts</td>
+                                <td><a href="https://laracasts.com/">https://laracasts.com/</a></td>
+                                
+                            </tr>
+                        </tbody>
+                        <thead>
+                            <tr>
+                                <th colspan="3">stockCoders</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="background-color:orangered;">Send E-mail(Form)</td>
+                                <td style="text-align:left;" colspan="2">
+                                    <label>Subject*</label> <br>
+                                    <input type="text" name="subject" value="sdad"><br>
+                                    <label>Message*</label> <br>
+                                    <textarea placeholder="Enter message..."></textarea>
+                                    <br>
+                                    <label>Phone</label> <br>
+                                    <input type="text" name="phone" placeholder="Enter phone number">
+                                    <br>
+                                    <br>
+                                    <input type="submit" value="Send mail">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>stockcoder</td>
+                                <td><a href="stockcoders99@gmail.com">stockcoders99@gmail.com</a></td>
+                                <td>NaserCity, Cairo, Egypt</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <div class="table-wrapper">
+                                        <div class="table-container">
+                                            <h4 style="text-align:center">Table(2)</h4>
+                                            <table class="nested-table" style="border: 4px solid orange;">
+                                                <thead>
+                                                    <tr style="background-color:rgb(148, 146, 146);">
+                                                        <th style="margin-left:50px;padding:15px;border: 2px solid orange">Name</th>
+                                                        <th style="margin-left:50px ;padding:15px;border: 2px solid orange">Send Email</th>
+                                                        <th style="margin-left:50px;padding:15px;border: 2px solid orange">phone</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="border: 2px solid orange;padding:20px">stockCoders</td>
+                                                        <td style="border: 2px solid orange;padding:20px"><a href="stockcoders99@gmail.com">stockcoders99@gmail.com</a></td>
+                                                        <td style="border: 2px solid orange;padding:20px">  +201152531478</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="table-container">
+                                            <h4 style="text-align:center">Table(3)</h4>
+                                            <table class="nested-table" style="border: 4px solid blue;">
+                                                <thead>
+                                                    <tr style="background-color:rgb(148, 146, 146);">
+                                                        <th style="margin-right:50px;padding:15px;border: 2px solid blue">Gender</th>
+                                                        <th style="margin-right:50px;padding:15px;border: 2px solid blue">created_at</th>
+                                                        <th style="margin-right:50px;padding:15px;border: 2px solid blue">Updated_at</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="border: 2px solid blue;padding:20px">Group</td>
+                                                        <td style="border: 2px solid blue;padding:20px">29/6/2024</td>
+                                                        <td style="border: 2px solid blue;padding:20px">30/6/2024</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                          
+                                <td colspan="3">
+                                    <div class="table-container">
+                                        <h4 style="text-align:center">Table(4)</h4>
+                                        <table style="border: 4px solid green;">
+                                            <thead>
+                                                <tr>
+                                                    <th style="border: 2px solid green;">Acount Number</th>
+                                                    <th style="border: 2px solid green;">CCV </th>
+                                                    <th style="border: 2px solid green;">Transactions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="3" style="border: 2px solid green;">111111</td>
+                                                    <td rowspan="3" style="border: 2px solid green;">0000</td>
+                                                    <td style="border: 2px solid green;">
+                                                        <h4 style="text-align:center">Table(5)</h4>
+                                                        <table style="border: 3px solid red;margin-top:10px;">
+                                                            <thead>
+                                                                <tr >
+                                                                    <th style="border: 2px solid red;">-</th>
+                                                                    <th style="border: 2px solid red;">Transactions</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr >
+                                                                    <td style="border: 2px solid red;">T1</td>
+                                                                    <td style="border: 2px solid red;">mabcjkcb</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="border: 2px solid red;">T2</td>
+                                                                    <td style="border: 2px solid red;">awad</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="border: 2px solid red;">T3</td>
+                                                                    <td style="border: 2px solid red;">mahmoud</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
